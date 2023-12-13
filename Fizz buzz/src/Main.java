@@ -11,7 +11,8 @@ public class Main {
        Scanner scanner = new Scanner(System.in);
         System.out.println("Escribe un numero");
        int n = scanner.nextInt();
-        for (int i = 1; i <= n; i++) {
+
+        for (int i = 1; i <= n; i++) { // for each integer i in the range from 1 to n inclusive and accumulate each number before reaching user defined input
             if (i % 15 == 0) { //if i is a multiple of both 3 and 5, print FizzBuzz
                 System.out.println("FizzBuzz");
             } else if (i % 3 == 0) { //if i is a multiple of 3 (but not 5), print Fizz
